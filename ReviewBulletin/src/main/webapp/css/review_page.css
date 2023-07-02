@@ -1,0 +1,68 @@
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+	*
+	{
+		font-family: 'Noto Sans KR', sans-serif;
+		margin: 0px;
+		padding: 0px;
+	}
+	ol, ul, li
+	{
+		list-style-type: none;
+		float: left;
+	}
+	a
+	{
+		text-decoration: none;
+		color: #333;
+	}
+	img 
+	{
+		-webkit-user-drag: none;
+	}
+	.headerMent {
+		text-align: center;
+		margin-top: 60px;
+	}
+	#section_wrap {
+		padding-top: 100px;
+		margin: auto;
+		width: 1000px;
+	}
+	.reviewTable {
+		margin: auto;
+		text-align: center;
+		width: 100%;
+	}
+	.reviewTable tr {
+		height: 50px;
+	}
+	.reviewTitle {
+		width: 320px;
+		overflow: hidden;
+	}
+	.tableTitle {
+		font-size: 20px;
+		font-weight: 500;
+		background-color: #E2E2E2;
+	}
+	#pageList {
+		width: 1000px;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	}
+	.reviewWriteWrap {
+		padding-top: 30px;
+		width: 1000px;
+		height: 50px;
+	}
+	.reviewWriteWrap button {
+		float: right;
+	}
+	.reviewScore {
+		color: #ffd400;
+	}
+	.location {
+		overflow: hidden;
+		width: 160px;
+	}

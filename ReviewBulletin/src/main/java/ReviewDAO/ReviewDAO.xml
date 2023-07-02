@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ReviewDAO"> 
+<!-- 로그인 처리 -->
+	<select id="login" parameterType="HashMap" resultType="ReviewModeling.User">
+		select * from sign_up where user_id = #{user_id} and user_pass = #{user_pass}
+	</select>
+<!-- 게시판 count -->
+	<select id="boardCount" resultType="Integer">
+		select count(*) from bulletin_board_review
+	</select>
+<!-- 게시글 출력 -->	
+	<select id="reviewPrint" parameterType="HashMap" resultType="HashMap">
+		select * from bulletin_board_review order by post_num desc limit #{startrow}, #{limit}
+	</select>
+<!-- 게시글 보기 -->	
+	<select id="reviewSelec" parameterType="Integer" resultType="ReviewModeling.Bulletin">
+		select * from bulletin_board_review where post_num = #{hNum}
+	</select>
+<!-- 게시글 Insert -->	
+	<insert id="reviewInsert" parameterType="HashMap">
+		insert into bulletin_board_review values 
+		(0, #{user_id}, now(), #{post_title}, #{post_body}, #{post_file}, #{post_readcount}, 
+		#{post_like}, #{post_travel_location}, #{post_rating})
+	</insert>
+</mapper>

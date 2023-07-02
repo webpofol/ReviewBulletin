@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	ol, ul, li
+	{
+		list-style-type: none;
+		float: left;
+	}
+	a
+	{
+		text-decoration: none;
+		color: #333;
+	}
+	img {
+		-webkit-user-drag: none;
+	}
+	section{
+		width: 1280px;
+		height: 1450px;
+		margin: auto;
+	}
+	#big_title {
+		padding-top: 50px;
+	}
+	h1 {
+		border-bottom: 1px dotted gray;
+		font-size: 50px;
+		color: #006CFA;
+		padding-bottom: 30px;
+	}
+	.form_wrap {
+		padding-top: 30px;
+		width: 1180px;
+		height: 700px;
+		margin: auto;
+	}
+	.title_wrap {
+		margin-top: 10px;
+	}
+	.content_title {
+		border-left: none;
+		border-top: 4px solid black;
+		border-right: none;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		width: 1180px;
+		height: 65px;
+	}
+	.secon_wrap {
+		align-items: center;
+		border-radius: 10px;
+		background-color: #3154b4;
+		display: flex;
+		justify-content: center;
+		height: 43px;
+	}
+	.secon_wrap div{
+		font-size: 15px;
+		color: #C0C0C0;
+	}
+	.avgscore {
+		width: 160px;
+		border: none;
+	}
+	.id_text {
+		color: rgb(255, 212, 0);
+		text-align: center;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 16px;
+		background-color: #3154b4;
+		width: 160px;
+		border: none;
+	}
+	.location_text {
+		color: rgb(255, 212, 0);
+		text-align: center;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 16px;
+		background-color: #3154b4;
+		width: 200px;
+		border: none;
+	}
+	.location_text::placeholder {
+		color: white;
+	}
+	.txt {
+		border-radius: 8px;
+		border: 2px double gray;
+		align-content: center;
+		margin-top: 30px;
+		width: 950px;
+		height: 600px;		
+	}
+	textarea {
+		resize: none;
+		padding: 20px 20px 20px 20px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 18px;
+	}
+	fieldset{
+		font-size: 10px;
+		text-align: center;
+	    display: inline-block;
+	    direction: rtl;
+	}
+	.avgscore input[type=radio]{
+	    display: none;
+	}
+	.avgscore label{
+	    font-size: 2em;
+	    color: transparent;
+	    text-shadow: 0 0 0 #f0f0f0;
+	}
+	.avgscore label:hover{
+	    text-shadow: 0 0 0 rgb(255, 212, 0);
+	}
+	.avgscore label:hover ~ label{
+	    text-shadow: 0 0 0 rgb(255, 212, 0);
+	}
+	.avgscore input[type=radio]:checked ~ label{
+	    text-shadow: 0 0 0 rgb(255, 212, 0);
+	}
+	#reviewContents {
+	    width: 100%;
+	    height: 150px;
+	    padding: 10px;
+	    box-sizing: border-box;
+	    border: solid 1.5px #D3D3D3;
+	    border-radius: 5px;
+	    font-size: 16px;
+	    resize: none;
+	}
+	.custom-btn {
+		font-size: 18px;
+		font-family: 'Noto Sans KR', sans-serif;
+		width: 100px;
+		height: 40px;
+		padding: 10px 25px;
+		border: 2px solid #000;
+		font-weight: 500;
+		background: transparent;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+	}
+
+	.btn-5 {
+		border-radius: 5px;
+		background: #006CFA;
+		color: #fff;
+		line-height: 42px;
+		padding: 0;
+		border: none;
+	}
+	.btn-5:hover {
+		background: transparent;
+		color: #000;
+		box-shadow:
+		-7px -7px 20px 0px #fff9,
+		-4px -4px 5px 0px #fff9,
+		7px 7px 20px 0px #0002,
+		4px 4px 5px 0px #0001;
+	}
+	.btn-5:before,
+	.btn-5:after{
+		content:'';
+		position:absolute;
+		top:0;
+		right:0;
+		height:2px;
+		width:0;
+		background: #006CFA;
+		transition:400ms ease all;
+	}
+	.btn-5:after{
+		right:inherit;
+		top:inherit;
+		left:0;
+		bottom:0;
+	}
+	.btn-5:hover:before,
+	.btn-5:hover:after{
+		width:100%;
+		transition:800ms ease all;
+	}
+	#sucess_bt {
+		text-align: right;
+		margin-top: 30px;
+	}
+	input:focus {
+		outline: none;
+	}
+	#input_file_wrap {
+		padding-top: 30px;
+		margin: auto;
+		display: flex;
+		justify-content: flex-start;
+		width: 990px;
+		height: 40px;
+	}
+	.filebox .upload-name {
+	    display: inline-block;
+	    width: 500px;
+	    height: 40px;
+	    padding: 0 10px;
+	    vertical-align: middle;
+	    border: 1px solid #dddddd;
+	    color: #999999;
+	}
+	.filebox label {
+		font-size: 15px;
+		font-family: 'Noto Sans KR', sans-serif;
+	    display: inline-block;
+	    padding: 6px 10px;
+	    color: #fff;
+	    vertical-align: middle;
+	    background-color: #999999;
+	    cursor: pointer;
+	    height: 30px;
+	    margin-left: 10px;
+	}
+	.filebox input[type="file"] {
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    border: 0;
+	}
+	#preview {
+		padding-top: 30px;
+		margin: auto;
+		width: 1000px;
+		display: flex;
+		justify-content: center;
+	}
+
+	#preview span {
+		overflow: hidden;
+		color: gray;
+		font-size: 14px;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+	#preview div{
+		text-align: center;
+		width: 180px;
+	}
+	.delBtn {
+		cursor: pointer;
+		width: 23px;
+		height: 23px;
+	}
+	.thumbNail {
+		border-radius: 10px; 
+	}
+	
+	
+	
+	

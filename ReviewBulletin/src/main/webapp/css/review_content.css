@@ -1,0 +1,73 @@
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+	*
+	{
+		font-family: 'Noto Sans KR', sans-serif;
+		margin: 0px;
+		padding: 0px;
+	}
+	ol, ul, li
+	{
+		list-style-type: none;
+		float: left;
+	}
+	a
+	{
+		text-decoration: none;
+		color: #333;
+	}
+	img 
+	{
+		-webkit-user-drag: none;
+	}
+	.contentWrap {
+		padding: 30px;
+		border-radius: 20px;
+		margin: auto;
+		margin-top: 100px;
+		width: 1100px;
+		border: 1px solid black;
+	}
+	.contentTitle {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 60px;
+	}
+	.reviewInfoWrap {
+		padding: 20px;
+	}
+	.reviewInfo {
+		justify-content: space-around;
+		display: flex;
+		align-items: center;
+	}
+	.reviewInfo div {
+		width: 145px;
+		place-content: center;
+		display: flex;
+		align-items: center;
+	}
+	.readCountIcon {
+		width: 25px;
+		height: 25px;
+	}
+	.writerIcon {
+		width: 20px;
+		height: 20px;
+	}
+	.writerDateIcon {
+		width: 20px;
+		height: 20px;
+	}
+	.reviewTextWrap {
+		text-align: center;
+		padding: 40px;
+		font-size: 18px;
+	}
+	.swiper-slide img {
+		width: 100%;
+		height: 100%;
+	}
+	
